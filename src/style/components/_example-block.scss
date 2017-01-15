@@ -1,0 +1,51 @@
+.example-block {
+  background-image: url(#{$path-to-img}example-bg.jpg);
+  padding-bottom: 60px;
+  .buttons-row {
+    @include clearfix;
+    text-align: center;
+    .cell {
+      display: inline-block;
+      @include breakpoint(max-width 870px) {
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: center;
+      }
+    }
+    button {
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+  }
+  .view-pdf {
+    text-align: center;
+    padding-top: 50px;
+    img {
+      max-width: 100%;
+    }
+    .page-nav {
+      color: #5a564f;
+      font-size: 1.2em;
+      font-weight: 300;
+      margin-top: 50px;
+      .ic-left-arrow {
+        @include sprite($ic-left-arrow);
+        margin-right: 10px;
+        position: relative;
+        top: 2px;
+      }
+      .ic-right-arrow {
+        @include sprite($ic-right-arrow);
+        margin-left: 10px;
+        position: relative;
+        top: 2px;
+      }
+    }
+    .download-link {
+      font-size: 1.2em;
+      margin-top: 30px;
+      font-weight: 300;
+    }
+  }
+}

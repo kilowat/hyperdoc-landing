@@ -1,17 +1,9 @@
 .button-pink {
   box-shadow: inset 0px -3px 0px 0px #d54442;
   background-color: #ff6b6b;
-  -webkit-border-top-left-radius: 6px;
-  -moz-border-radius-topleft: 6px;
   border-top-left-radius: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -moz-border-radius-topright: 6px;
   border-top-right-radius: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
   border-bottom-right-radius: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  -moz-border-radius-bottomleft: 6px;
   border-bottom-left-radius: 6px;
   text-indent: 0;
   border: 1px solid #d54442;
@@ -39,6 +31,25 @@
   position: relative;
   top: 1px;
 }
-
-
-/* This button was generated using CSSButtonGenerator.com */
+.button-blue{
+  border: 1px solid #3792d6;
+  border-radius: 4px;
+  background-color: transparent;
+  display: inline-block;
+  color: #3792d6;
+  font-weight: 400;
+  font-size: 1em;
+  font-style: normal;
+  height: 50px;
+  line-height: 1.2em;
+  width: 235px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  &.active{
+   box-shadow: inset 0px -3px 0px 0px #0a77c2;   
+    background-color: #3792d6;
+    color: #fff;
+  }
+}

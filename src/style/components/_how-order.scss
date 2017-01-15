@@ -1,0 +1,35 @@
+.how-order{
+  background-image: url(#{$path-to-img}how-bg.jpg);
+  background-size: cover;
+  @include breakpoint($display-ex-small-max-size){
+    background-image: none;
+  }
+  .list{
+    text-align: center;
+    @include clearfix;
+    margin-top: 30px;
+    .item{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      @include span(1 of 4 inside);
+      @include breakpoint($display-small-max-size){
+        @include span(1 of 2 inside);
+      }
+      @include breakpoint($display-ex-small-max-size){
+        @include span(1 of 1 inside);
+      }
+      .name{
+        font-size: 1.2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+      .text{
+        font-weight: 200;
+        line-height: 1.3em;
+      }
+    }
+  }
+  .pay-info{
+    padding-top: 50px;
+  }
+}

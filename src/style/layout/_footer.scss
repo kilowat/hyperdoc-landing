@@ -1,6 +1,7 @@
 footer {
   background-image: url('#{$path-to-img}footer-bg.jpg');
-  height: 190px;
+  height: 170px;
+  padding-top: 20px;
   position: relative;
   @include breakpoint($display-small-max-size) {
     height: 100px;

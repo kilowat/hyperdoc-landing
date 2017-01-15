@@ -38,7 +38,32 @@
   top: 1px;
 }
 
-/* This button was generated using CSSButtonGenerator.com */
+.button-blue {
+  border: 1px solid #3792d6;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-color: transparent;
+  display: inline-block;
+  color: #3792d6;
+  font-weight: 400;
+  font-size: 1em;
+  font-style: normal;
+  height: 50px;
+  line-height: 1.2em;
+  width: 235px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-blue.active {
+  -webkit-box-shadow: inset 0px -3px 0px 0px #0a77c2;
+  box-shadow: inset 0px -3px 0px 0px #0a77c2;
+  background-color: #3792d6;
+  color: #fff;
+}
+
 .icheckbox_flat {
   display: inline-block;
   *display: inline;
@@ -748,6 +773,10 @@ a:hover {
   color: red;
 }
 
+i {
+  display: inline-block;
+}
+
 html {
   font-size: 16px;
 }
@@ -777,11 +806,13 @@ h2 {
   margin: 0;
   padding-bottom: 1em;
   padding-top: 1em;
+  text-align: center;
 }
 
 .comp-text {
   line-height: 1.3em;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 /*start header*/
@@ -930,7 +961,8 @@ header .mobile-panel .m-phone-number {
 /*************/
 footer {
   background-image: url("../images/footer-bg.jpg");
-  height: 190px;
+  height: 170px;
+  padding-top: 20px;
   position: relative;
 }
 
@@ -1327,6 +1359,160 @@ body {
   font-size: 1.1em;
   font-weight: 300;
   line-height: 1.3em;
+}
+
+.example-block {
+  background-image: url(../images/example-bg.jpg);
+  padding-bottom: 60px;
+}
+
+.example-block .buttons-row {
+  text-align: center;
+}
+
+.example-block .buttons-row:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.example-block .buttons-row .cell {
+  display: inline-block;
+}
+
+@media (max-width: 870px) {
+  .example-block .buttons-row .cell {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+}
+
+.example-block .buttons-row button {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.example-block .view-pdf {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.example-block .view-pdf img {
+  max-width: 100%;
+}
+
+.example-block .view-pdf .page-nav {
+  color: #5a564f;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-top: 50px;
+}
+
+.example-block .view-pdf .page-nav .ic-left-arrow {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -37px;
+  width: 9px;
+  height: 17px;
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+}
+
+.example-block .view-pdf .page-nav .ic-right-arrow {
+  background-image: url(../images/sprite.png);
+  background-position: -9px -37px;
+  width: 9px;
+  height: 17px;
+  margin-left: 10px;
+  position: relative;
+  top: 2px;
+}
+
+.example-block .view-pdf .download-link {
+  font-size: 1.2em;
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+.how-order {
+  background-image: url(../images/how-bg.jpg);
+  background-size: cover;
+}
+
+@media (max-width: 640px) {
+  .how-order {
+    background-image: none;
+  }
+}
+
+.how-order .list {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.how-order .list:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.how-order .list .item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+@media (max-width: 980px) {
+  .how-order .list .item {
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 640px) {
+  .how-order .list .item {
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.how-order .list .item .name {
+  font-size: 1.2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.how-order .list .item .text {
+  font-weight: 200;
+  line-height: 1.3em;
+}
+
+.how-order .pay-info {
+  padding-top: 50px;
 }
 
 .bottom-menu ul {
