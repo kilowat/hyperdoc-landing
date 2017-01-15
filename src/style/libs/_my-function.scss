@@ -1,0 +1,6 @@
+@function em($pixels, $context: 16px) {
+  @return #{$pixels/$context}em
+}
+@function rem($size, $context: 16px) {
+  @return #{$size / $context}rem;
+}

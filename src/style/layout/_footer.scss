@@ -1,0 +1,32 @@
+footer {
+  background-image: url('#{$path-to-img}footer-bg.jpg');
+  height: 190px;
+  position: relative;
+  @include breakpoint($display-small-max-size) {
+    height: 100px;
+  }
+}
+
+.bottom-wrapper {
+  position: absolute;
+  bottom: 0px;
+  height: 60px;
+  width: 100%;
+  background-image: url('#{$path-to-img}footer-opacity.png');
+  .coop {
+    float: left;
+  }
+  .create-by {
+    float: right;
+  }
+  .coop,
+  .create-by {
+    color: $bottom-text-color;
+  }
+  .container {
+    padding-top: 15px;
+  }
+}
+
+@include stick-footer(185px,
+'.push-wrapper');

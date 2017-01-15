@@ -1,0 +1,17 @@
+.bottom-menu {
+  ul {
+    list-style: none;
+    padding: 0;
+    @include span(3 of 16);
+    li {
+      margin-bottom: 7px;
+      a {
+        color: $bottom-menu-link-color;
+        text-decoration: none;
+      }
+    }
+  }
+  @include breakpoint($display-small-max-size) {
+    display: none;
+  }
+}

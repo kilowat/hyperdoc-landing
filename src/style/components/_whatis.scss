@@ -1,0 +1,23 @@
+.what-is{
+  text-align: center;
+  background: url(#{$path-to-img}what-is-bg.png) left top no-repeat;
+  padding-bottom: 4em;
+  .list{
+    padding-top: 2em;
+    @include clearfix;
+    .item{
+      @include span(1 of 4 inside);
+      @include breakpoint($display-ex-small-max-size){
+        @include span(1 of 2 inside);
+      }
+      margin-top: 40px;
+      margin-bottom: 40px;
+      .name{
+        margin-top: 25px;
+        font-size: 1.1em;
+        font-weight: 300;
+        line-height: 1.3em;
+      }
+    }
+  }
+}

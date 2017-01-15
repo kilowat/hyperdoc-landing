@@ -1,0 +1,100 @@
+/*start header*/
+
+header {
+  $cell-height: 160px;
+  $top-line-bg-color: #3a3a3c;
+  $border-color: #b1b1b8;
+  $top-mobile-panel-height: 54px;
+  .top-line-wrapper {
+    background-color: $top-line-bg-color;
+    @include breakpoint($display-small-max-size) {
+      display: none;
+    }
+    .top-line {
+      background: rgba(0, 0, 0, 0) url('#{$path-to-img}top-line-bg.jpg') no-repeat scroll center top;
+      height: 30px;
+    }
+  }
+  .top-block {
+    @include breakpoint($display-small-max-size) {
+      display: none;
+    }
+  }
+  .header-wrapper {
+    border-bottom: 1px solid $border-color;
+    height: $cell-height;
+    background-image: url('#{$path-to-img}header-bg.jpg');
+    background-size: cover;
+    @include breakpoint($display-small-max-size) {
+      height: $top-mobile-panel-height;
+      background-image: none;
+    }
+    .container {
+      position: relative;
+      .logo {
+        padding-top: 20px;
+        a {
+          display: inline-block;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+      .col {
+        @include span(3 of (12) inside);
+      }
+      .slogan {
+        @include span(4 of (12) inside);
+        span {
+          font-size: 1.1em;
+          line-height: 1.4em;
+          color: #404447;
+          display: inline-block;
+          padding-top: 40px;
+        }
+      }
+      .col.top-user-menu-wrapper {
+        padding-top: 10px;
+        text-align: right;
+        @include span(3 at 9 of (12) inside last);
+      }
+    }
+  }
+  .phone-number {
+    font-size: 1.5em;
+    color: #616366;
+    text-align: right;
+  }
+  .top-center {
+    @include clearfix;
+    height: $cell-height;
+  }
+  .mobile-panel {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $top-mobile-panel-height;
+    background-color: black;
+    .table-cell {
+      height: $top-mobile-panel-height;
+      color: #fff;
+    }
+    .m-phone-number {
+      color: #fff;
+      float: right;
+      padding-right: 15px;
+      padding-top: 17px;
+    }
+    @include breakpoint($display-small-max-size) {
+      display: block;
+    }
+  }
+}
+
+
+/*end header*/
+
+
+/*************/

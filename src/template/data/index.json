@@ -1,0 +1,67 @@
+{
+  "title": "New project",
+  "serviceFirstBlock": [
+    {
+      "img": "./images/flat.png",
+      "name": "Квартиры",
+      "price": "900"
+    },
+    {
+      "img": "./images/house.png",
+      "name": "Дома",
+      "price": "2900"
+    },
+    {
+      "img": "./images/company.png",
+      "name": "Организации",
+      "price": "9900"
+    }
+  ],
+  "whatis":[
+    {
+      "img": "../images/whatis.png",
+      "name": "Для оформления договоров недвижимости"
+    },
+    {
+      "img": "../images/whatis.png",
+      "name": "Для оформления договоров недвижимости"
+    },
+    {
+      "img": "../images/whatis.png",
+      "name": "Для оформления договоров недвижимости"
+    },
+    {
+      "img": "../images/whatis.png",
+      "name": "Для оформления договоров недвижимости"
+    },
+    {
+      "img": "../images/whatis.png",
+      "name": "Для оформления договоров недвижимости"
+    },
+    {
+      "img": "../images/whatis.png",
+      "name": "Для оформления договоров недвижимости"
+    },
+    {
+      "img": "../images/whatis.png",
+      "name": "Для оформления договоров недвижимости"
+    },
+    {
+      "img": "../images/whatis.png",
+      "name": "Для оформления договоров недвижимости"
+    },
+    {
+      "img": "../images/whatis.png",
+      "name": "Для оформления договоров недвижимости"
+    },
+    {
+      "img": "../images/whatis.png",
+      "name": "Для оформления договоров недвижимости"
+    },
+    {
+      "img": "../images/whatis.png",
+      "name": "Для оформления договоров недвижимости"
+    }
+    
+  ]
+}

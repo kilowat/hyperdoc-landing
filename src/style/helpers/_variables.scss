@@ -1,0 +1,83 @@
+$path-to-img: "../images/";
+
+/////colors
+$color-white: #fff;
+$color-black: #000;
+$color-white-light : #cfd0d6;
+$color-blue-light : #0a77c2;
+$color-grey: #dcdfe3;
+$color-red: red;
+$color-light-grey : #f6f6f6;
+$color-silver-grey : #485158;
+$color-cream-color : #999999;
+$color-dark: #322b1f; 
+$color-rock: #5d656c;
+////base-background
+$bg-color : $color-white;
+
+////fonts
+$roboto-famaly : 'Roboto';
+
+$font-family-base : $roboto-famaly;
+$font-size-base: 16px;
+
+////link
+$link-color : $color-blue-light;
+$link-color-hover: $color-red;
+
+////typorgaphy
+$h1-color: $color-dark;
+
+////componentns
+$user-left-menu-color-bg: $color-grey;
+$user-left-menu-child-link-color: $color-rock;
+$bottom-menu-link-color: $color-white-light;
+$bread-crumbs-color-bg: $color-light-grey;
+$bread-crumbs-link-color : $color-silver-grey;
+$bread-crumbs-link-active-color : $color-cream-color;
+//inputs
+$color-input-text-auth:$color-grey;
+
+////display size:
+$display-lage-max-size : max-width 1200px;
+$display-medium-max-size : max-width 1024px;
+$display-small-max-size : max-width 980px;
+$display-ex-small-max-size : max-width 640px;
+$display-ultra-small-max-size : max-width 320px;
+
+//paddings
+$container-padding : 15px; // left right container padding
+$content-padding : 20px; //content padding in tag main
+//footer
+$footer-height : 185px;
+$bottom-text-color : $color-white-light;
+//susy
+$wrapper-width : 1200px;
+
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: auto,
+  container-position: center,
+  columns: 12,
+  gutters: .25,
+  column-width: false,
+  global-box-sizing: content-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(blue, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);
+

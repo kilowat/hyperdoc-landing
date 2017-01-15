@@ -1,0 +1,39 @@
+html {
+  font-size: $font-size-base;
+}
+
+body {
+  font-family: $font-family-base;
+}
+
+h1 {
+  font-size: rem(23px, $font-size-base);
+  color: $h1-color;
+  margin-bottom: em(12px, $font-size-base);
+  margin-top: em(12px, $font-size-base);
+  font-weight: 600;
+}
+
+h2 {
+  font-size: rem(19px, $font-size-base);
+  font-weight: 400;
+  margin-bottom: em(12px, $font-size-base);
+  margin-top: em(12px, $font-size-base);
+}
+
+h3 {}
+
+h4 {}
+
+.comp-header {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.comp-text {
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}

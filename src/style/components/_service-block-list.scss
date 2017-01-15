@@ -1,0 +1,59 @@
+.service-block {
+  min-height: 430px;
+  &.first-block {
+    background-image: url(#{$path-to-img}first-block-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include breakpoint($display-ex-small-max-size){
+      background-image: none;
+      background-color: #2f3031;
+    }
+  }
+  &.second-block {
+    background-image: url(#{$path-to-img}second-block-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include breakpoint($display-ex-small-max-size){
+      background-image: none;
+      background-color: #2f3031;
+    }
+  }
+  .item-list {
+    @include clearfix;
+    .item {
+      text-align: center;
+      margin-top: 50px;
+      @include span(1 of 3 inside);
+      @include breakpoint($display-ex-small-max-size){
+         @include span(1 of 1 inside);
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+      .name {
+        font-size: 1.4em;
+        color: #fff;
+        font-weight: 400;
+        margin-top: 0.3em;
+        margin-bottom: 1em;
+      }
+      .price-block {
+        font-weight: 300;
+        font-size: 1.4em;
+        margin-bottom: 1.5em;
+        .price {
+          color: #fff;
+          padding-right: 1em;
+        }
+        a {
+          font-weight: 300;
+          text-decoration: none;
+          border-bottom: 2px dashed;
+          color: #79c6ff;
+          &:hover{
+            color: $link-color-hover;
+          }
+        }
+      }
+    }
+  }
+}

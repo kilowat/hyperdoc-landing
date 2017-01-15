@@ -1,0 +1,90 @@
+.container{
+  @include container($wrapper-width);
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  min-width: 320px;
+}
+a{
+  color:$link-color;
+}
+a:hover{
+  color:$link-color-hover;
+}
+.left-column{
+  @include span(3 of 11 0);
+ // @include breakpoint($display-medium-max-size){
+   //  display: none;
+  //}
+}
+.right-column{
+  @include span(8 at 9 of 11 0 last);
+    //@include breakpoint($display-medium-max-size){
+    //@include span(12);
+  //}
+}
+.content{
+  padding-left: $content-padding;
+}
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.div-table{
+  display: table;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-right: none;
+}
+.div-table .div-table-header{
+  background-color: #f6f6f6;
+  font-weight: 500;
+  color: #000;
+
+}
+.div-table-row{
+  display: table-row;
+
+}
+.div-table-cell{
+  display: table-cell;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.9em;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.div-table-row.table-seporator {
+    background: #ccc none repeat scroll 0 0;
+}
+.table{
+  display: table;
+}
+.table-row{
+  display: table-row;
+}
+.table-cell{
+  display: table-cell;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.content{
+  margin-bottom: 30px;
+}
+main{
+
+}
+.red{
+  color:red;
+}
+
+
+
