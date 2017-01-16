@@ -169,7 +169,14 @@
   </div>
   <!--pay info-->
   <div class="pay-info">
-    <h2 class="comp-header">Мы принимае к оплате:</h2>
+    <h2 class="comp-header">Мы принимаем к оплате:</h2>
+    <div class="pay-list">
+     {% for item in payItems %}
+      <div class="item">
+        <a href="" title=""><i class="{{ item.img }}"></i></a>
+      </div>
+      {% endfor %}
+    </div>
   </div>
   <!--end paye info-->
 </div>

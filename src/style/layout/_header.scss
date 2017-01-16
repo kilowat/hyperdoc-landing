@@ -77,6 +77,7 @@ header {
     width: 100%;
     height: $top-mobile-panel-height;
     background-color: black;
+    z-index: 1;
     .table-cell {
       height: $top-mobile-panel-height;
       color: #fff;

@@ -84,5 +84,40 @@
       "name": "Оставьте заявку",
       "text": "Как только документ будет изготовлен, его электронная копия в формате PDF будет отправлена на указанный e-mail, а оригинал в бумажном виде отправлен курьером."
     }
+  ],
+  "payItems":[
+    {
+      "img": "ic-mestro"
+    },
+    {
+      "img": "ic-mestro"
+    },
+    {
+      "img": "ic-mestro"
+    },
+    {
+      "img": "ic-mestro"
+    },
+    {
+      "img": "ic-mestro"
+    },
+    {
+      "img": "ic-mestro"
+    },
+    {
+      "img": "ic-mestro"
+    },
+    {
+      "img": "ic-mestro"
+    },
+    {
+      "img": "ic-mestro"
+    },
+    {
+      "img": "ic-mestro"
+    },
+    {
+      "img": "ic-mestro"
+    }
   ]
 }
