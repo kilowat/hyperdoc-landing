@@ -1,0 +1,68 @@
+.order-form{
+  h1{
+    color: #fff;
+    font-size: 1.7em;
+    font-weight: 400;
+    margin-top: 1.5em;
+  }
+  h1{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top: 1.5em;
+  }
+  background-color: #dfe0e5;
+  width: 900px;
+  @include clearfix;
+  border:2px solid #5aa3d7;
+  color: #fff;
+ 
+  .prop-list{
+    display: table;
+    margin-bottom: 20px;
+    .table-row{
+      .table-cell:first-child{
+        width: 70%;
+      }
+      .table-cell:nth-child(2){
+        width: 30%;
+      }
+      .table-cell{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        .descr{
+          font-size: 0.9em;
+          font-style: italic;
+        }
+      }
+    }
+  }
+  .left-col{
+    width: 22%;
+    float: left;
+    text-align: center;
+    img{
+      margin-top: 20px;
+    }
+  }
+  .form-content{
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 70%;
+    float: left;
+    background-image: url(#{$path-to-img}form-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 1.3em;
+    .text{
+      text-align: left;
+    }
+    button{
+      margin-bottom: 20px;
+    }
+    .price{
+      font-size: 1.6em;
+      font-weight: 300;
+    }
+  }
+}

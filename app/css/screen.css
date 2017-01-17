@@ -1015,6 +1015,90 @@ body {
   height: 0px;
 }
 
+.order-form {
+  background-color: #dfe0e5;
+  width: 900px;
+  border: 2px solid #5aa3d7;
+  color: #fff;
+}
+
+.order-form h1 {
+  color: #fff;
+  font-size: 1.7em;
+  font-weight: 400;
+  margin-top: 1.5em;
+}
+
+.order-form h1 {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-top: 1.5em;
+}
+
+.order-form:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.order-form .prop-list {
+  display: table;
+  margin-bottom: 20px;
+}
+
+.order-form .prop-list .table-row .table-cell:first-child {
+  width: 70%;
+}
+
+.order-form .prop-list .table-row .table-cell:nth-child(2) {
+  width: 30%;
+}
+
+.order-form .prop-list .table-row .table-cell {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.order-form .prop-list .table-row .table-cell .descr {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.order-form .left-col {
+  width: 22%;
+  float: left;
+  text-align: center;
+}
+
+.order-form .left-col img {
+  margin-top: 20px;
+}
+
+.order-form .form-content {
+  padding-left: 4%;
+  padding-right: 4%;
+  width: 70%;
+  float: left;
+  background-image: url(../images/form-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  line-height: 1.3em;
+}
+
+.order-form .form-content .text {
+  text-align: left;
+}
+
+.order-form .form-content button {
+  margin-bottom: 20px;
+}
+
+.order-form .form-content .price {
+  font-size: 1.6em;
+  font-weight: 300;
+}
+
 #simpleDrawer {
   background: #fff none repeat scroll 0 0;
   height: 100%;
